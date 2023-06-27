@@ -1,0 +1,82 @@
+
+#Import
+import time
+import os
+
+#player
+oneSlotInventory = "Flashlight "
+#npc
+charName = "(Patrick)"
+#game
+
+yes = "y"
+no = "n"
+
+#----------------
+
+print("--------Sequence One--------")
+
+print("What is your name child?")
+playerName = input("")
+print("{} is a fine name, welcome to the catacombs. My name is {}.".format(playerName,charName))
+print("It is a pleasure to meet you")
+print("...")
+time.sleep(1)
+print("Are you lost?")
+time.sleep(1)
+print("y or n")
+answer = str(input(""))
+
+
+#-------Sequence 1.0------
+
+while answer in (yes, no):
+    time.sleep(0)
+    if answer == yes:
+        #----1.1
+        print("Come child, follow me")
+
+        break
+    elif answer == no:
+        #----2.1
+        print("Please do not lie, you don't look like us")
+
+        break
+    else:
+        print("Hmm can you say that again")
+        answer =str(input(""))
+        os.system("clear")
+
+
+#-----Decision 1.0
+print("*Patrick holds your hand and takes you down the dark hallway*")
+time.sleep(1)
+print("{}, we are almost the Eden".format(playerName))
+time.sleep(2)
+print(".....")
+time.sleep(1)
+print("run..")
+time.sleep(2)
+os.system("clear")
+
+print("Do you wish to run?")
+answer =str(input(""))
+
+while answer in (yes, no):
+    time.sleep(0)
+    if answer == yes:
+        #----1.1
+        print("Left or Right? (l or r)")
+
+        break
+    elif answer == no:
+        #----2.1
+        print("As you stay still, a ghastly figures passes by...")
+        break
+    else:
+        print("WOMP WOMP YOUR DEAD")
+        os.system("clear")
+
+
+
+
